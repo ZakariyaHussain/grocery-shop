@@ -33,81 +33,93 @@
 
 </head>
 <body class="sora">
-    <header class="container mx-auto">
-        <div class="navbar justify-between">
-            <!-- Header logo -->
-            <div>
-              <a class="btn btn-ghost"><img class="w-2/3 md:w-full" src="assets/logo-header.png" alt=""></a>
-            </div>
-            <!-- Menu -->
-            <div class="hidden md:block">
-                <ul class="menu menu-horizontal text-xl text-[#111111]">
-                    <li><a>Products</a></li>
-                    <li><a>Services</a></li>
-                    <li><a>Contact Us</a></li>
-                </ul>
-            </div>
-            <!-- Icons and button -->
-            <div class="md:flex items-center hidden">
-                <!-- Search icon -->
-                <div class="inline">
-                    <button class="btn btn-ghost btn-circle">
-                        <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        class="h-5 w-5"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor">
-                        <path
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            stroke-width="2"
-                            d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-                        </svg>
-                    </button>
+    <header class="bg-gradient-to-b from-[#ffffff] to-[#EFEBE3]">
+        <section id="header" class="container mx-auto">
+            <!-- Navbar -->
+            <div class="navbar justify-between border-b-2 border-greeen md:border-hidden">
+                <!-- Header logo -->
+                <div>
+                  <a class="btn btn-ghost"><img class="w-2/3 md:w-full" src="assets/logo-header.png" alt=""></a>
                 </div>
-                <!-- Cart icon -->
-                <div class="dropdown dropdown-end">
-                    <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
-                        <div class="indicator">
+                <!-- Menu -->
+                <div class="hidden md:block">
+                    <ul class="menu menu-horizontal text-xl text-[#111111]">
+                        <li><a>Products</a></li>
+                        <li><a>Services</a></li>
+                        <li><a>Contact Us</a></li>
+                    </ul>
+                </div>
+                <!-- Icons and button -->
+                <div class="md:flex items-center hidden">
+                    <!-- Search icon -->
+                    <div class="inline">
+                        <button class="btn btn-ghost btn-circle">
                             <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                class="h-5 w-5"
-                                fill="none"
-                                viewBox="0 0 24 24"
-                                stroke="currentColor">
-                                <path
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="h-5 w-5"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path
                                 stroke-linecap="round"
                                 stroke-linejoin="round"
                                 stroke-width="2"
-                                d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+                                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
                             </svg>
+                        </button>
+                    </div>
+                    <!-- Cart icon -->
+                    <div class="dropdown dropdown-end">
+                        <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
+                            <div class="indicator">
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    class="h-5 w-5"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    stroke="currentColor">
+                                    <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="2"
+                                    d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+                                </svg>
+                            </div>
                         </div>
                     </div>
+                    <!-- Login button -->
+                    <button class="btn btn-outline border-greeen btn-black ml-3 mr-5">Login</button>
+                    <!-- Register button -->
+                    <button class="btn bg-greeen text-white">Primary</button>
                 </div>
-                <!-- Login button -->
-                <button class="btn btn-outline border-greeen btn-black ml-3 mr-5">Login</button>
-                <!-- Register button -->
-                <button class="btn bg-greeen text-white">Primary</button>
+                <!-- Hamburgar icon -->
+                <div class="flex-none md:hidden">
+                    <button class="btn btn-square btn-ghost text-greeen text-2xl">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        class="inline-block h-5 w-5 stroke-current">
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M4 6h16M4 12h16M4 18h16"></path>
+                      </svg>
+                    </button>
+                </div>
             </div>
-            <!-- Hamburgar icon -->
-            <div class="flex-none md:hidden">
-                <button class="btn btn-square btn-ghost text-greeen text-2xl">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    class="inline-block h-5 w-5 stroke-current">
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M4 6h16M4 12h16M4 18h16"></path>
-                  </svg>
-                </button>
+            <!-- Banner Section -->
+            <div id="banner" class="my-20">
+                <div class="flex flex-col justify-center space-y-6">
+                    <h1 class="font-semibold text-[56px] text-[#111111] text-center animate-pulse ">Freshness <span class="text-greeen">You Can<br> Count</span> On, Prices You’ll Love!</h1>
+                    <p class="text-xl text-[#111111] text-center">Shop your daily essentials at unbeatable prices. From fresh produce to pantry<br> staples, we’ve got you covered every day!</p>
+                    <img src="assets/hero-vegetables.png" alt="">
+                </div>
             </div>
-        </div>
+        </section>
     </header>
+    
     <main>
 
     </main>
