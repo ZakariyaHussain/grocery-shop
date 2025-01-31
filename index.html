@@ -11,6 +11,9 @@
     <!-- Tailwindcss and DaisyUI cdn -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Icons cdn -->
+    <script src="https://kit.fontawesome.com/8989f32842.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <style>
         .sora{
@@ -25,6 +28,8 @@
               colors: {
                 clifford: '#da373d',
                 greeen: '#179800',
+                lblack: '#111111',
+                sbg: '#EFEBE3',
               }
             }
           }
@@ -122,7 +127,7 @@
     <!-- Main section start -->
     <main>
         <!-- Service section -->
-         <section id="services" class="container mx-auto">
+        <section id="services" class="container mx-auto mb-20">
             <div class="p-[10px] md:p-0">
                 <h2 class="font-semibold text-4xl text-greeen mb-12">Services</h2>
                 <!-- Card -->
@@ -136,7 +141,7 @@
                              />
                         </figure>
                         <div class="card-body items-center text-center p-0">
-                          <h2 class="card-title text-2xl text-[#111111]">24/7 Services </h2>
+                          <h2 class="card-title text-2xl text-[#111111]">24/7 Services</h2>
                           <p class="font-light text-xl">If a dog chews shoes whose shoes does he choose?</p>
                         </div>
                     </div>
@@ -144,12 +149,12 @@
                     <div class="card justify-center items-center bg-[#EFEBE3] shadow-xl p-8">
                         <figure class="flex mb-6 w-[150px] h-[150px] bg-white rounded-[50%]">
                           <img class=""
-                            src="assets/service.png"
+                            src="assets/delivery.png"
                             alt="Shoes"
                              />
                         </figure>
                         <div class="card-body items-center text-center p-0">
-                          <h2 class="card-title text-2xl text-[#111111]">24/7 Services </h2>
+                          <h2 class="card-title text-2xl text-[#111111]">Fast Delivery</h2>
                           <p class="font-light text-xl">If a dog chews shoes whose shoes does he choose?</p>
                         </div>
                     </div>
@@ -157,18 +162,195 @@
                     <div class="card justify-center items-center bg-[#EFEBE3] shadow-xl p-8">
                         <figure class="flex mb-6 w-[150px] h-[150px] bg-white rounded-[50%]">
                           <img class=""
-                            src="assets/service.png"
+                            src="assets/healthy.png"
                             alt="Shoes"
                              />
                         </figure>
                         <div class="card-body items-center text-center p-0">
-                          <h2 class="card-title text-2xl text-[#111111]">24/7 Services </h2>
+                          <h2 class="card-title text-2xl text-[#111111]">Healthy Products</h2>
                           <p class="font-light text-xl">If a dog chews shoes whose shoes does he choose?</p>
                         </div>
                     </div>
                 </div>
             </div>
-         </section>
+        </section>
+        
+         <!-- Products section -->
+        <section id="products" class="bg-sbg py-20">
+          <div class="container mx-auto p-[10px] md:p-0">
+            <h2 class="font-semibold text-4xl text-greeen mb-12">Popular Products</h2>
+            <div class="grid md:grid-cols-3 gap-6">
+              <!-- Left card -->
+              <div class="relative w-auto min-h-[448px] card card-side bg-gradient-to-br from-[#53DB3A] to-[#ffffff] shadow-xl">
+                <div class="space-y-6 px-8 pt-14">
+                  <h2 class="card-title text-3xl text-white">30% OFF</h2>
+                  <p class="text-lblack">Discover a world of treats, toys, and<br> essentials handpicked for </p>
+                  <div class="">
+                    <button class="btn font-normal text-xl">Buy Now</button>
+                  </div>
+                </div>
+                <figure class="absolute right-8 bottom-0">
+                  <img class="w-full"
+                    src="assets/vegetable-offer.png"
+                    alt="Movie" />
+                </figure>
+              </div>
+              <!-- Right card -->
+              <div class="md:col-span-2 grid grid-cols-2 md:grid-cols-3 gap-5">
+                <!-- Card 1 -->
+                <div class="card card-side bg-base-100 shadow-xl p-3">
+                  <figure>
+                    <img
+                      src="assets/onion.png"
+                      alt="Movie" />
+                  </figure>
+                  <div class="flex flex-col justify-between ml-2">
+                    <div>
+                      <i class="text-yellow-500 fa-solid fa-star"></i>
+                      <p class="inline">4.5</p>
+                    </div>
+                    <h2 class="card-title font-medium text-xl text-lblack">Onion 1 kg</h2>
+                    <p class="font-medium text-lblack">$39.99</p>
+                    
+                  </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="card card-side bg-white shadow-xl p-3">
+                  <figure>
+                    <img class="w-full"
+                      src="assets/tomato.png"
+                      alt="Movie" />
+                  </figure>
+                  <div class="flex flex-col justify-between ml-2">
+                    <div>
+                      <i class="text-yellow-500 fa-solid fa-star"></i>
+                      <p class="inline">4.5</p>
+                    </div>
+                    <h2 class="card-title font-medium text-xl text-lblack">Tomato 500 g</h2>
+                    <p class="font-medium text-lblack">$39.99</p>
+                  </div>
+                </div>
+                <!-- Card 3 w-[275px] h-[118px]  -->
+                <div class="card card-side bg-base-100 shadow-xl p-3">
+                  <figure>
+                    <img
+                      src="assets/potato.png"
+                      alt="Movie" />
+                  </figure>
+                  <div class="flex flex-col justify-between ml-2">
+                    <div>
+                      <i class="text-yellow-500 fa-solid fa-star"></i>
+                      <p class="inline">4.5</p>
+                    </div>
+                    <h2 class="card-title font-medium text-xl text-lblack">Potato 1 kg</h2>
+                    <p class="font-medium text-lblack">$39.99</p>
+                    
+                  </div>
+                </div>
+                <!-- Card 4 -->
+                <div class="card card-side bg-base-100 shadow-xl p-3">
+                  <figure>
+                    <img
+                      src="assets/potato.png"
+                      alt="Movie" />
+                  </figure>
+                  <div class="flex flex-col justify-between ml-2">
+                    <div>
+                      <i class="text-yellow-500 fa-solid fa-star"></i>
+                      <p class="inline">4.5</p>
+                    </div>
+                    <h2 class="card-title font-medium text-xl text-lblack">Potato 1 kg</h2>
+                    <p class="font-medium text-lblack">$39.99</p>
+                    
+                  </div>
+                </div>
+                <!-- Card 5 -->
+                <div class="card card-side bg-base-100 shadow-xl p-3">
+                  <figure>
+                    <img
+                      src="assets/onion.png"
+                      alt="Movie" />
+                  </figure>
+                  <div class="flex flex-col justify-between ml-2">
+                    <div>
+                      <i class="text-yellow-500 fa-solid fa-star"></i>
+                      <p class="inline">4.5</p>
+                    </div>
+                    <h2 class="card-title font-medium text-xl text-lblack">Onion 1 kg</h2>
+                    <p class="font-medium text-lblack">$39.99</p>
+                    
+                  </div>
+                </div>
+                <!-- Card 6 w-[275px] h-[118px]  -->
+                <div class="card card-side bg-white shadow-xl p-3">
+                  <figure>
+                    <img class="w-full"
+                      src="assets/tomato.png"
+                      alt="Movie" />
+                  </figure>
+                  <div class="flex flex-col justify-between ml-2">
+                    <div>
+                      <i class="text-yellow-500 fa-solid fa-star"></i>
+                      <p class="inline">4.5</p>
+                    </div>
+                    <h2 class="card-title font-medium text-xl text-lblack">Tomato 500 g</h2>
+                    <p class="font-medium text-lblack">$39.99</p>
+                  </div>
+                </div>
+                <!-- Card 7 -->
+                <div class="card card-side bg-base-100 shadow-xl p-3">
+                  <figure>
+                    <img
+                      src="assets/onion.png"
+                      alt="Movie" />
+                  </figure>
+                  <div class="flex flex-col justify-between ml-2">
+                    <div>
+                      <i class="text-yellow-500 fa-solid fa-star"></i>
+                      <p class="inline">4.5</p>
+                    </div>
+                    <h2 class="card-title font-medium text-xl text-lblack">Onion 1 kg</h2>
+                    <p class="font-medium text-lblack">$39.99</p>
+                    
+                  </div>
+                </div>
+                <!-- Card 8 -->
+                <div class="card card-side bg-white shadow-xl p-3">
+                  <figure>
+                    <img class="w-full"
+                      src="assets/tomato.png"
+                      alt="Movie" />
+                  </figure>
+                  <div class="flex flex-col justify-between ml-2">
+                    <div>
+                      <i class="text-yellow-500 fa-solid fa-star"></i>
+                      <p class="inline">4.5</p>
+                    </div>
+                    <h2 class="card-title font-medium text-xl text-lblack">Tomato 500 g</h2>
+                    <p class="font-medium text-lblack">$39.99</p>
+                  </div>
+                </div>
+                <!-- Card 9 w-[275px] h-[118px]  -->
+                <div class="card card-side bg-base-100 shadow-xl p-3">
+                  <figure>
+                    <img
+                      src="assets/potato.png"
+                      alt="Movie" />
+                  </figure>
+                  <div class="flex flex-col justify-between ml-2">
+                    <div>
+                      <i class="text-yellow-500 fa-solid fa-star"></i>
+                      <p class="inline">4.5</p>
+                    </div>
+                    <h2 class="card-title font-medium text-xl text-lblack">Potato 1 kg</h2>
+                    <p class="font-medium text-lblack">$39.99</p>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
     </main>
     <footer>
 
