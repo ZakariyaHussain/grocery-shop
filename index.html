@@ -38,17 +38,20 @@
 
 </head>
 <body class="sora">
-    <header class="bg-gradient-to-b from-[#ffffff] to-[#EFEBE3]">
+    <header class="bg-gradient-to-b from-white to-sbg">
         <section id="header" class="container mx-auto">
             <!-- Navbar -->
-            <div class="navbar justify-between border-b-2 border-greeen md:border-hidden">
+            <div class="navbar justify-between border-b-2 border-greeen md:border-hidden mt-6">
                 <!-- Header logo -->
-                <div>
+                <div class="hidden md:block">
                   <a class="btn btn-ghost"><img class="w-2/3 md:w-full" src="assets/logo-header.png" alt=""></a>
+                </div>
+                <div class="md:hidden">
+                  <a class="btn btn-ghost"><img class="w-2/3 md:w-full" src="assets/logo-mobile.png" alt=""></a>
                 </div>
                 <!-- Menu -->
                 <div class="hidden md:block">
-                    <ul class="menu menu-horizontal md:justify-end text-xl text-[#111111]">
+                    <ul class="menu menu-horizontal md:justify-end text-xl text-lblack">
                         <li><a>Products</a></li>
                         <li><a>Services</a></li>
                         <li><a>Contact Us</a></li>
@@ -117,13 +120,14 @@
             <!-- Banner Section -->
             <div id="banner" class="my-20">
                 <div class="flex flex-col justify-center space-y-6">
-                    <h1 class="font-semibold text-[56px] text-[#111111] text-center animate-pulse ">Freshness <span class="text-greeen">You Can<br> Count</span> On, Prices You’ll Love!</h1>
-                    <p class="text-xl text-[#111111] text-center">Shop your daily essentials at unbeatable prices. From fresh produce to pantry<br> staples, we’ve got you covered every day!</p>
+                    <h1 class="font-semibold text-[40px] md:text-[56px] text-lblack text-center animate-pulse ">Freshness <span class="text-greeen">You Can<br> Count</span> On, Prices You’ll Love!</h1>
+                    <p class="text-xl text-lblack text-center">Shop your daily essentials at unbeatable prices. From fresh produce to pantry<br> staples, we’ve got you covered every day!</p>
                     <img src="assets/hero-vegetables.png" alt="">
                 </div>
             </div>
         </section>
     </header>
+
     <!-- Main section start -->
     <main>
         <!-- Service section -->
@@ -133,7 +137,7 @@
                 <!-- Card -->
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
                     <!-- Card 1 -->
-                    <div class="card justify-center items-center bg-[#EFEBE3] shadow-xl p-8">
+                    <div class="card justify-center items-center bg-sbg shadow-xl p-8">
                         <figure class="flex mb-6 w-[150px] h-[150px] bg-white rounded-[50%]">
                           <img class=""
                             src="assets/service.png"
@@ -141,12 +145,12 @@
                              />
                         </figure>
                         <div class="card-body items-center text-center p-0">
-                          <h2 class="card-title text-2xl text-[#111111]">24/7 Services</h2>
+                          <h2 class="card-title text-2xl text-lblack">24/7 Services</h2>
                           <p class="font-light text-xl">Enjoy delicious, fresh, and convenient 24/7 vegetable service, available anytime to satisfy your cravings!</p>
                         </div>
                     </div>
                     <!-- Card 2 -->
-                    <div class="card justify-center items-center bg-[#EFEBE3] shadow-xl p-8">
+                    <div class="card justify-center items-center bg-sbg shadow-xl p-8">
                         <figure class="flex mb-6 w-[150px] h-[150px] bg-white rounded-[50%]">
                           <img class=""
                             src="assets/delivery.png"
@@ -154,12 +158,12 @@
                              />
                         </figure>
                         <div class="card-body items-center text-center p-0">
-                          <h2 class="card-title text-2xl text-[#111111]">Fast Delivery</h2>
+                          <h2 class="card-title text-2xl text-lblack">Fast Delivery</h2>
                           <p class="font-light text-xl">Get farm-fresh vegetables delivered fast to your doorstep, ensuring quality, convenience, and healthy meals anytime!</p>
                         </div>
                     </div>
                     <!-- Card 3 -->
-                    <div class="card justify-center items-center bg-[#EFEBE3] shadow-xl p-8">
+                    <div class="card justify-center items-center bg-sbg shadow-xl p-8">
                         <figure class="flex mb-6 w-[150px] h-[150px] bg-white rounded-[50%]">
                           <img class=""
                             src="assets/healthy.png"
@@ -167,7 +171,7 @@
                              />
                         </figure>
                         <div class="card-body items-center text-center p-0">
-                          <h2 class="card-title text-2xl text-[#111111]">Healthy Products</h2>
+                          <h2 class="card-title text-2xl text-lblack">Healthy Products</h2>
                           <p class="font-light text-xl">
                             Enjoy fresh, organic, and nutrient-rich vegetable products for a healthier lifestyle and delicious, wholesome meals daily!</p>
                         </div>
@@ -352,7 +356,8 @@
             </div>
           </div>
         </section>
-        <!-- Best Sale section -->
+
+        <!-- Best Sale (extra) section -->
          <section id="bestsale" class="container mx-auto my-20 p-[10px] md:p-0">
           <h2 class="font-semibold text-4xl text-greeen mb-12">Best Sale</h2>
           <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 items-center">
@@ -438,6 +443,7 @@
             </div>
           </div>
          </section>
+
         <!-- Offer section -->
         <section id="offer">
           <div class="container mx-auto mt-32 mb-20 p-[10px] md:p-0">
@@ -468,6 +474,7 @@
             </div>
           </div>
         </section>
+
         <!-- Subscribe section -->
       <section id="subscribe" class="relative container w-[90%] md:w-full mx-auto hero bg-sbg rounded-3xl z-10 -mb-80 md:-mb-52">
         <div class="w-full flex flex-col justify-center items-center md:flex-row md:justify-between md:px-24 py-14">
@@ -487,6 +494,7 @@
         </div>
       </section>
     </main>
+
     <!-- Footer start -->
     <footer class="bg-greeen">
       <!-- Footer section -->
